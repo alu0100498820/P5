@@ -26,7 +26,6 @@ TEMPLATE_DEBUG = True
 
 ALLOWED_HOSTS = []
 
-
 # Application definition
 
 INSTALLED_APPS = (
@@ -36,7 +35,8 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'static_pages'
+    'static_pages',
+    'lettuce.django',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -52,6 +52,9 @@ ROOT_URLCONF = 'P5.urls'
 
 WSGI_APPLICATION = 'P5.wsgi.application'
 
+TEMPLATE_DIRS = (
+  '/home/borja/dsi/proyDjango/P5/static_pages/templates'
+)
 
 # Database
 # https://docs.djangoproject.com/en/1.6/ref/settings/#databases
